@@ -26,20 +26,26 @@ body {
   border-radius: 8px;
   box-shadow: 5px 5px 10px black;
   color: #fff;
+  overflow: hidden;
 }
 
-.info {
+.info i {
+  font-size: 24px;
   position: absolute;
   top: 6px;
-  right: 14px;
   padding: 20px;
-  font-size: 24px;
   color: #D2C7BE;
   cursor: pointer;
   transition: color 0.3s;
 }
-.info:hover {
+.info i:hover {
   color: #FA1406;
+}
+.info .fa-question {
+  right: 14px;
+}
+.info .fa-paint-brush {
+  right: 60px;
 }
 
 h1 {

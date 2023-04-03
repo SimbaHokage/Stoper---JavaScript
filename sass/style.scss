@@ -29,6 +29,7 @@ body {
     border-radius: 8px;
     box-shadow: 5px 5px 10px black;
     color: #fff;
+    overflow: hidden;
 }
 
 .info {
@@ -50,11 +51,11 @@ body {
         right: 14px;
         
     }
-
     
-}
-.fa-paint-brush {
-    right: 60px;
+    .fa-paint-brush {
+        right: 60px;
+    }
+    
 }
 
 h1 {
@@ -171,73 +172,4 @@ button {
     }
 }
 
-.colors {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    top: 100px;
-    right: -100px;
-    width: 64px;
-    height: 220px;
-    transition: right .3s;
-}
 
-.color {
-    width: 40px;
-    height: 40px;
-    border: 3px solid black;
-    border-radius: 50%;
-    background-color: #ddd;
-    cursor: pointer;
-    transition: background-color .5s, box-shadow .5s;
-}
-
-.show-colors {
-    transform: translateX(-110px);
-}
-
-
-.one {
-    background-color: colors.$first-color;
-    box-shadow: 0 0 8px colors.$first-color
-}
-
-.two {
-    background-color: colors.$seocnd-color;
-    box-shadow: 0 0 8px colors.$second-color
-}
-
-.three {
-    background-color: colors.$third-color;
-    box-shadow: 0 0 8px colors.$third-color
-}
-
-.four {
-    background-color: colors.$fourth-color;
-    box-shadow: 0 0 8px colors.$fourth-color
-}
-
-.one:hover {
-    background-color: colors.$first-hover;
-    box-shadow: 0 0 8px colors.$first-color
-}
-
-.two:hover {
-    background-color: colors.$second-hover;
-    box-shadow: 0 0 8px colors.$second-color
-
-}
-
-.three:hover {
-    background-color: colors.$third-hover;
-    box-shadow: 0 0 8px colors.$third-color
-
-}
-
-.four:hover {
-    background-color: colors.$fourth-hover;
-    box-shadow: 0 0 8px colors.$fourth-color
-
-}

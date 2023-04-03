@@ -11,14 +11,6 @@ const infoBtn = document.querySelector('.fa-question')
 const modalShadow = document.querySelector('.modal-shadow')
 const closeModalBtn = document.querySelector('.close')
 
-const colorBtn = document.querySelector('.fa-paint-brush')
-const colorPanel = document.querySelector('.colors')
-const colorOne = document.querySelector('.one')
-const colorTwo = document.querySelector('.two')
-const colorThree = document.querySelector('.three')
-const colorFour = document.querySelector('.four')
-let root = document.documentElement;
-
 let countTime
 let minutes = 0
 let seconds = 0
@@ -92,7 +84,6 @@ const showModal = () => {
     // } else {
     //     modalShadow.style.display = 'none'
     // }
-
     if(modalShadow.style.display === 'none') {
         modalShadow.style.display = 'block'
     } else {
@@ -116,22 +107,3 @@ infoBtn.addEventListener('click', showModal)
 closeModalBtn.addEventListener('click', showModal);
 window.addEventListener('click', e => e.target === modalShadow ? showModal() : false)
 
-colorBtn.addEventListener('click', () => {
-    colorPanel.classList.toggle('show-colors')
-})
-
-colorOne.addEventListener('click', () => {
-    root.style.setProperty('colors.$first-color', '#FA1406')
-})
-
-colorTwo.addEventListener('click', () => {
-    root.style.setProperty('colors.$second-color', '#D2C7BE')
-})
-
-colorThree.addEventListener('click', () => {
-    root.style.setProperty('colors.$third-color', '#38e0b6')
-})
-
-colorFour.addEventListener('click', () => {
-    root.style.setProperty('colors.$fourth-color', '#9411ff')
-})
